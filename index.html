@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Map - Interactive Infographic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+</head>
+<body>
+    <!-- Info Panel (Hidden by Default) -->
+    <div id="info-panel" class="hidden">
+        <button id="close-btn">&times;</button>
+        <div id="info-content">
+            <img id="info-image" src="" alt="Location Image">
+            <h2 id="info-title"></h2>
+            <p id="info-description"></p>
+        </div>
+    </div>
+
+    <!-- Map Container -->
+    <div id="map"></div>
+
+    <!-- Load Scripts -->
+    <!-- Load Scripts -->
+<script defer src="map.js"></script>
+<script defer src="map_filter.js"></script>
+<script defer src="info_panel.js"></script>
+
+<!-- Map Filter Panel -->
+<div id="map-filter">
+    <button id="filter-toggle">Map Filter</button>
+    <div id="filter-panel" class="hidden">
+        <button id="filter-close">✖ Close</button>
+        <h3>Map Filter</h3>
+        <input type="text" id="filter-search" placeholder="Filter by title or description">
+        <ul id="filter-list">
+            <li><input type="checkbox" class="filter-option" data-category="all">All</li>
+            <li><input type="checkbox" class="filter-option" data-category="building">Buildings</li>
+            <li><input type="checkbox" class="filter-option" data-category="study">Study Areas</li>
+            <li><input type="checkbox" class="filter-option" data-category="food">Food</li>
+            <li><input type="checkbox" class="filter-option" data-category="sport">Sport</li>
+            <li><input type="checkbox" class="filter-option" data-category="parking"> Parking</li>
+        </ul>
+    </div>
+</div>
+</body>
+
+
+
+</html>
