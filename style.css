@@ -57,9 +57,6 @@ html, body {
 
 #info-image {
     width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
 }
 
 #info-title {
@@ -72,21 +69,25 @@ html, body {
 }
 
 #info-description {
-    font-size: 14px;
+    font-size: 20px;
     padding-left: 10px;
     color: #303030;
     margin-bottom: 10px;
 }
 
-#info-extra ul {
-    list-style: none;
-    padding: 0;
+#info-category {
+    font-size: 20px;
+    padding-left: 10px;
+    color: #303030;
+    margin-bottom: 10px;
+}
+#info-facilities-head {
+    font-size: 20px;
+    padding-left: 10px;
+    color: #303030;
+    margin-bottom: 10px;
 }
 
-#info-extra li {
-    font-size: 14px;
-    margin: 5px 0;
-}
 @media (max-width: 768px) {
     #info-panel {
         width: 100vw;  /* Slightly smaller than full width */
