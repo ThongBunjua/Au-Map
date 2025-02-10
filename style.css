@@ -11,6 +11,7 @@ html, body {
     width: 100vw;
     height: 100vh;
     background-color: white; /* Ensure the map itself has a white background */
+    position: relative;
 }
 
 #info-panel {
@@ -106,11 +107,12 @@ html, body {
 #filter-toggle {
     background: #f5f5f5;
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 30px;
     cursor: pointer;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     font-size: 20px;
+
 }
 
 /* Map Filter Panel */
@@ -149,5 +151,40 @@ html, body {
 
 #filter-list li {
     margin: 10px 0;
+}
+
+/*map change button*/
+#osm-map {
+    width: 100%;
+    height: 100%;
+}
+
+#controls {
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    z-index: 1000;
+}
+
+#toggle-map {
+    background-color: white;
+    border: 1px solid black;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 1001;
+    position: relative;
+}
+
+.hidden-google {
+    display: none;
+}
+
+#custom-map, #google-map-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
